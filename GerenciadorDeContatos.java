@@ -19,14 +19,6 @@ public class GerenciadorDeContatos {
         System.out.println(tele);
     });
   }
-  public void listarContatos() {
-        Contatos.forEach((nome, tele) -> {
-            System.out.print(nome);
-            System.out.print("  ");
-            System.out.println(tele);
-        });
-    }
-
     public void pesquisarImplantar(String nome, String tele) {
         if (Contatos.containsKey(nome)) {
             System.out.println("Contato já existe. Atualizando o número de telefone...");
